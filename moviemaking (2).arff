@@ -1,0 +1,70 @@
+@relation movie_making
+
+@attribute movie {success, failure}
+@attribute production {low, high}
+@attribute Direction? {good, bad}
+@attribute costume_designer {good, bad}
+@attribute cinematography? {good,average,bad}
+@attribute scriptwriter {bad, average, good}
+@attribute music_director {skilled, unskilled}
+@attribute stunt_coordinator {popular, unpopular}
+@attribute editor_rate? {0, 1, 2, 3}
+@attribute cast? {debutant, veteran, popular, method}
+@attribute makeup_artist {professional,unprofessional}
+
+
+@data               
+failure, low, bad, bad , bad, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, high, bad, bad , bad, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, low, good, bad , bad, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, low, bad, good , average, bad, unskilled,unpopular, 0, debutant, professional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, low, bad, good , good, bad, unskilled,unpopular, 0, debutant, professional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, low, bad, bad , good, bad, skilled,unpopular, 0, debutant, unprofessional
+failure, low, bad, bad , good, bad, skilled,popular, 0, debutant, unprofessional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 1, debutant, unprofessional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 2, debutant, professional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 3, debutant, unprofessional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 0, veteran, professional
+failure, low, bad, bad , good, bad, unskilled,unpopular, 0, debutant, unprofessional
+failure, high, bad, bad , good, bad, skilled,popular, 0, debutant, professional
+failure, high, bad, bad , good, good, unskilled,unpopular, 0, debutant, unprofessional
+failure, high, bad, bad , bad, good, unskilled,popular, 0, popular, professional
+failure, high, bad, good , good, bad, skilled,unpopular, 0, method, unprofessional
+failure, high, good, bad , good, average, unskilled,unpopular, 0, debutant, professional
+failure, high, good, bad , good, bad, skilled,popular, 0, method, unprofessional
+
+success, low, bad, bad , good, good, unskilled,unpopular, 0, debutant, unprofessional
+success, low, bad, bad , good, good, unskilled,unpopular, 0, veteran, unprofessional
+success, low, bad, bad , good, good, unskilled,unpopular, 0, debutant, professional
+success, high, bad, bad , good, average, unskilled,unpopular, 0, debutant, unprofessional
+success, high, bad, bad , good, bad, skilled,unpopular, 0, method, unprofessional
+success, high, good, good , good, good, skilled,popular, 3, popular, professional
+success, high, good, good , average, good, skilled,popular, 3, popular, professional
+success, high, good, good , good, average, skilled,popular, 3, popular, professional
+success, high, good, good , average, good, skilled,popular, 2, popular, professional
+success, high, bad, good , good, average, skilled,popular, 2, popular, professional
+success, high, good, good , average, good, skilled,popular, 1, popular, professional
+success, high, bad, good , good, average, skilled,popular, 1, popular, professional
+success, high, good, bad , average, good, skilled,popular, 3, popular, professional
+success, high, good, good , good, average, skilled,popular, 3, popular, professional
+success, high, good, good , bad, bad, skilled,unpopular, 2, popular, professional
+success, high, bad, good , good, average, skilled,unpopular, 3, popular, professional
+success, high, good, good , average, good, skilled,popular, 1, method, unprofessional
+success, high, good, good , good, average, skilled,popular, 1,debutant, professional
+success, low, good, good , average, bad, unskilled,unpopular, 1, method, unprofessional
+success, low, good, good , bad, bad, unskilled,unpopular, 1,popular, professional
+
+
+
+
+
+
+
+
+
+
+
+
+
